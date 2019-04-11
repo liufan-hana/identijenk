@@ -6,7 +6,7 @@ sudo docker-compose $COMPOSE_ARGS stop
 sudo docker-compose $COMPOSE_ARGS rm --force -v
 
 #build the system
-sudo docker-compose $COMPOSE_ARGS build --no-cache
+sudo docker-compose $COMPOSE_ARGS build --no-cache=true
 sudo docker-compose $COMPOSE_ARGS up -d
 
 #Run unit tests
